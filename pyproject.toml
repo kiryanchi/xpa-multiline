@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "xpa-multiline"
+version = "0.1.0"
+description = ""
+authors = ["kiryanchi <kiryanchi@naver.com>"]
+readme = "README.md"
+packages = [{ include = "xpa_multiline" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+openpyxl = "==3.0.9"
+pyside6 = "<6.5.0"
+pillow = "==8.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
