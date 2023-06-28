@@ -60,7 +60,7 @@ class Excel:
         img.save(bytes_io, 'PNG')
 
         img = Image(bytes_io)
-        img.width = 238
+        img.width = 214 if cell[0] == 'F' else 238
         img.height = 160
 
         self.work_sheet.add_image(img, cell)
